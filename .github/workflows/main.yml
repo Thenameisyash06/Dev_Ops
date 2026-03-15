@@ -1,0 +1,12 @@
+name: practice
+on:
+  push:
+    branches: [ main ]
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: greetings
+        run: echo "Hello from workflow!"
+        
