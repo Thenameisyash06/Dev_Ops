@@ -1,0 +1,13 @@
+name: scedule_runner
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  scedule_work:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: scedule_run
+        run: echo "Scedule Workflow!"
