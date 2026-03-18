@@ -6,6 +6,10 @@ jobs:
   demo:
     runs-on: ubuntu-latest
 
+    concurrency:
+      group: deploy
+      cancel-in-progress: true
+
     steps:
       - name: greetings
         run: echo "Hello from workflow!"
