@@ -197,3 +197,5 @@ status_label = tk.Label(root, text="Status: Idle", font=("Arial", 12))
 status_label.pack(pady=10)
 
 root.mainloop()
+
+print("Voice Assistant done!")
